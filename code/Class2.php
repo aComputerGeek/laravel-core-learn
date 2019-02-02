@@ -80,7 +80,7 @@
 
 	//实例化IoC容器
 	$ioc = new Ioc();
-	$ioc->bind('log','FileLog');
+	$ioc->bind('Log','FileLog');
 	$ioc->bind('user','User');
 	$user = $ioc->make('user');
 	$user->login();
